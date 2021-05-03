@@ -1,0 +1,401 @@
+
+
+@import '_variables';
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+    color: $dark;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 123.2rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+// HEADER
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 123.2rem;
+    padding: 3.3rem 1.5rem;
+    margin: 0 auto;
+}
+
+// NAV 
+.nav {
+    display: flex;
+    align-items: center;
+
+    padding-left: 0;
+    margin: 0;
+    &__item {
+        margin-left: 4.4rem;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-left: 2.7rem;
+        }
+    }
+    &__link {
+        color: $dark;
+    }
+    &__btn {
+        width: 11.2rem;
+        height: 4.8rem;
+        padding: 1.6rem 2.6rem;
+        border-radius: .6rem;
+        font-size: 1.4rem;
+        color:white;
+        background-color: $purple;
+    }
+}
+
+// BANNER
+.banner {
+    position: relative;
+    text-align: center;
+    background-color: $dark;
+    color: $white;
+    padding-bottom: 75.7rem;
+    &__title{
+        max-width: 56.3rem;
+        font-size: 5.55rem;
+        font-weight: 400;
+        margin: 0 auto 3.1rem;
+        padding-top: 6.2rem;
+    }
+    &__text {
+        color: darken($color: $white, $amount: 30);
+    }
+    &__img {
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -17.1rem;
+        margin: 0 auto;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.6rem;
+    &__btn {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: $white;
+        background-color: transparent;
+        border: 1px solid $white;
+        border-radius: .6rem;
+        padding: 1.7rem 3.7rem;
+        margin: 0 0.8rem;
+        &-main {
+            font-size: 1.5rem;
+            background-color: $purple;
+            border-color: $purple;
+            padding: 1.8rem 3.7rem;
+        }
+    }
+}
+
+// TARIFFS
+.tariffs__section {
+    padding-top: 17rem;
+    margin-bottom: 23.3rem;
+}
+
+.tariffs__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    text-align: center;
+}
+
+.tariffs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+    &__item {
+        flex: 0 0 32%;
+        &-one{
+            .tariffs__header {
+                background-image: url(/img/check-background-01.png);
+            }
+            .tariffs__footer {
+                background-color:rgba(16, 10, 48, 0.03)
+            }
+            .tariffs__list-item {
+                &::before {
+                    background-image: url(/img/check-01.svg);
+                }
+            }
+        }
+        &-two{
+            .tariffs__header {
+                background-image: url(/img/check-background-02.png);
+            }
+            .tariffs__footer {
+                background-color:rgba(25, 199, 135, 0.05)
+            }
+            .tariffs__list-item {
+                &::before {
+                    background-image: url(/img/check-02.svg);
+                }
+            }
+        }
+        &-three{
+            .tariffs__header {
+                background-image: url(/img/check-background-03.png);
+            }
+            .tariffs__footer {
+                background-color:rgba(252, 185, 52, 0.05)
+            }
+            .tariffs__list-item {
+                &::before {
+                    background-image: url(/img/check-03.svg);
+                }
+            }
+        }
+       
+    }
+    &__header {
+        width: 39.5rem;
+        height: 25rem;
+        border-radius: .8rem .8rem 0 0;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: $white;
+        padding: 13.55rem 3rem 2rem;
+        &-title {
+            font-size: 2.4rem;
+            font-weight: 400;
+
+            &::before {
+                content: '';
+                display: block;
+                background-image: url(/img/logo-check.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 6.1rem;
+                height: 1.6rem;
+                margin-bottom: .8rem;
+            }
+        }
+        &-price {
+            font-size: 4.8rem;
+            line-height: 5.6rem;
+
+            padding: 0 1.2rem 1rem 0;
+            span {
+                font-size: 1.5rem;
+                line-height: 3.2rem;
+            }
+        }
+    }
+    &__footer {
+        border-radius: 0 0 .8rem .8rem;
+        padding: 1.1rem 2.5rem;
+    }
+}
+
+.tariffs__list {
+    padding-left: 0;
+    &-item {
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        font-weight: 700;
+        padding-left: 3rem;
+        margin-bottom: 1.4rem;
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 2rem;
+            height: 2rem;
+            top: calc(50% - 1rem);
+            left: 0;
+        }
+    }
+}
+
+// REVIEWS
+.reviews__section {
+    margin-bottom: 5.5rem;
+    &-body{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // :nth-child(3n) {
+        //     margin-bottom: auto;
+        // }
+    }
+}
+
+.reviews__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+}
+
+.reviews {
+    &__item {
+        box-sizing: border-box;
+        width: 59.6rem;
+        border-radius: .8rem;
+        padding: 2rem 4rem 4.5rem 5.7rem;
+        margin: -2.8rem 0 6.7rem 0;
+
+        &-one {
+            height: 18.2rem;
+            position: relative;
+            background-color: $pink;
+            padding-top: 1rem;
+        }
+        &-two {
+            height: 29.8rem;
+            position: relative;
+            background-color: $light-purple;
+        }
+        &-three {
+            
+            height: 23.8rem;
+            position: relative;
+            background-color: $light-blue;
+        }
+        &-four {
+            height: 22rem;
+            position: relative;
+            background-color: $light-green;
+        }
+        &-five {
+            margin-top: -9rem;
+            height: 25rem;
+            position: relative;
+            background-color: $light-yellow;
+        }
+    }
+}
+
+.reviews__header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.reviews__avatar {
+    margin: 2.1rem 0 0 -1.6rem;
+    &-photo {
+        border-radius: 50%;
+    }
+}
+
+.reviews__user {
+    padding-left: 1.5rem;
+    &-name {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+    }
+    &-mail {
+        margin: -1.8rem 0 4.2rem 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+
+.reviews__social {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 3.5rem;
+    right: 4rem;
+    opacity: .1;
+}
+
+.reviews__body {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-left: -1.6rem;
+}
+
+.reviews__footer {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin: 1.9rem 0 0 -1.6rem;
+}
+
+// FOOTER
+.footer {
+    background-color: $footer;
+    padding: 3.6rem 0 5.7rem;
+    // max-width: 100%;
+    // height: 27.1rem;
+    // margin-bottom: 12.1rem;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 17%;
+    }
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        &-first {
+            padding: 2.2rem 0 2.3rem 0;
+        }
+    }
+    &__social {
+        padding-top: 3.1rem;
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
+    &__link {
+        &-img {
+            color: $dark;
+            width: 2rem;
+            height: 2rem;
+            padding-right: 1.9rem;
+        }
+    }
+}
+
+
+@import '_adapt';

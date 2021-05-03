@@ -1,0 +1,189 @@
+
+// 1200
+@media (max-width: 120rem) {
+
+    // container
+    .container {
+        width: 100%;
+        max-width: 120rem;
+    }
+    
+    // TARIFFS
+    .tariffs__section {
+        margin-bottom: 13.3rem;
+    }
+    
+    .tariffs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -4rem;
+        &__item {
+            margin: 2rem auto;
+        }
+    }
+
+    // REVIEWS
+    .reviews__section {
+        &-body{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+            width: 50%;
+        }
+    }
+
+    .reviews__title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .reviews {
+        &__item {
+            &-five {
+                margin-top: -3rem;
+            }
+        }
+    }
+
+    // FOOTER
+    .footer {
+        &__text {
+            font-size: 1.3rem;
+
+        }
+    }
+}
+
+
+
+
+// 991
+@media (max-width: 991px) {
+    // container
+    .container {
+        width: 100%;
+        max-width: 99.1rem;
+    }
+
+    // TARIFFS
+    .tariffs__section {
+        margin-bottom: 13.3rem;
+    }
+    
+    .tariffs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -4rem;
+        &__item {
+            margin: 2rem auto;
+        }
+    }
+
+    // REVIEWS
+    .reviews__section {
+        &-body{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+            width: 50%;
+        }
+    }
+
+    .reviews__title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .reviews {
+        &__item {
+            &-five {
+                margin-top: -3rem;
+            }
+        }
+    }
+
+    // FOOTER
+    .footer {
+        &__text {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+
+// 767
+@media (max-width: 767px) {
+    // container
+    .container {
+        max-width: none;
+    }
+
+    // BANNER
+    .banner {
+        padding-bottom: 60.7rem;
+        &__title{
+            font-size: 3.55rem;
+        }
+        &__text {
+            font-size: 1.55rem;
+        }
+        &__img {
+            bottom: 1rem;
+        }
+    }
+
+    // TARIFFS
+    .tariffs__section {
+        margin-bottom: 13.3rem;
+    }
+
+    .tariffs__title {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .tariffs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -4rem;
+        &__item {
+            margin: 2rem auto;
+        }
+    }
+
+    // REVIEWS
+    .reviews__section {
+        &-body{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+            width: 50%;
+        }
+    }
+
+    .reviews__title {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .reviews {
+        &__item {
+            &-two {
+                height: 32rem;
+            }
+            &-four {
+                height: 25rem;
+            }
+        }
+        &__body {
+            font-size: 1.2rem;
+        }
+    }
+}
